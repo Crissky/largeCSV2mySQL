@@ -88,7 +88,7 @@ $count1=(int)$r1['count'];
 mysqli_query($cons, '
     LOAD DATA LOCAL INFILE "'.$file.'"
         INTO TABLE '.$table.'
-        FIELDS TERMINATED by \',\'
+        FIELDS TERMINATED by \';\'
         LINES TERMINATED BY \'\n\'
 ')or die(mysql_error());
 
